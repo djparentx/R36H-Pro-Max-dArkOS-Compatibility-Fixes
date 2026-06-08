@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =======================================================
-# SMB Default Settings for dArkOSRE
+# SMB Default Settings for dArkOS
 # =======================================================
 
 # -------------------------------------------------------
@@ -125,7 +125,7 @@ cat <<'EOF' > "$SMB"
    usershare allow guests = yes
 
 # Set netbios name to change the device hostname for Samba shares  
-   netbios name = MY_R36S
+   netbios name = R36H_PM
 
 #======================= Share Definitions =======================
 
@@ -161,6 +161,7 @@ cat <<'EOF' > "$SMB"
    map hidden = no
    guest ok = yes
    read list = guest
+
 [roms2]
    comment = ROMS2
    path = /roms2
